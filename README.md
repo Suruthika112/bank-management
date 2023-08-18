@@ -3,9 +3,7 @@
 ## Demo:
 ![](screenshot/bank.png)
 ## Installation:
-**1.Clone Repo**
-```sh
-git clone https://github.com/shyam999/ParagonBank.git
+
 ```
 **2.Setup Virtualenv & Install Requirements**
 ```sh
@@ -24,4 +22,4 @@ python manage.py runserver
 ```
 
 ## Where to find Me
-visit My [Website](https://shyam999.github.io)
+visit My [Website](https://sanjaysblog.netlify.app)
