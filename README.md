@@ -3,20 +3,18 @@
 ## Demo:
 ![](screenshot/bank.png)
 ## Installation:
-
-```
-**2.Setup Virtualenv & Install Requirements**
+**Setup Virtualenv & Install Requirements**
 ```sh
 virtualenv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
-**3.Migrate Database**
+**Migrate Database**
 ```sh
 python manage.py makemigrations
 python manage.py migrate
 ```
-**4.Run Server**
+**Run Server**
 ```sh
 python manage.py runserver
 ```
