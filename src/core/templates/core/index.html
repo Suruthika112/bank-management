@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>paragon Bank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'mycss/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'mycss/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'mycss/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'mycss/magnific-popup.css' %}">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{% static 'mycss/style.css' %}">
+  </head>
+  <body>
+    
+    <header role="banner">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}">Paragon</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample05">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'transactions:deposit' %}">Deposit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'transactions:withdrawal' %}">Withdraw</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item cta-btn">
+                <a class="nav-link" href="{% url 'accounts:register' %}">Create Account</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- END header -->
+    
+    <section class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center">
+            <div class="col-md-8 text-center col-sm-12 element-animate">
+              <h1>Paragon Bank</h1>
+              <p class="mb-5">Paragon Bank is a leading private sector bank in India. The Bank’s consolidated total assets stood at Rs.00.00 trillion at Feb 16, 2020</p>
+              <p><a href="{% url 'accounts:login' %}" class="btn btn-white btn-outline-white">Log In To Account</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        
+      </div>
+
+    </section>
+    <script src="{% static 'myjs/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'myjs/popper.min.js' %}"></script>
+    <script src="{% static 'myjs/bootstrap.min.js' %}"></script>
+    <script src="{% static 'myjs/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'myjs/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'myjs/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'myjs/magnific-popup-options.js' %}"></script>
+
+    <script src="{% static 'myjs/main.js' %}"></script>
+  </body>
+</html>
